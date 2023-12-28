@@ -1,0 +1,117 @@
+:root {
+    --chipbg: rgb(10, 70, 87);
+    --chipicon: rgb(27, 165, 165);
+    --chiptext: rgb(71, 240, 240);
+    --font-two: rgb(170, 170, 170);
+    --linktophonebg: rgb(12, 64, 122);
+    --linktophonebghover: rgb(2, 28, 58);
+    --border: rgb(255, 255, 255);
+}
+/* It's actually light mode and I know how counterintuitive that is but it works and I'm too lazy to change it lmao - Linas */
+[data-theme="dark"] {
+    --chipbg: rgba(117, 211, 236, 0.329);
+    --chipicon: rgb(11, 73, 73);
+    --chiptext: rgb(46, 131, 131);
+    --font-two: rgb(87, 87, 87);
+    --linktophonebg: rgb(29, 167, 226);
+    --linktophonebghover: rgb(118, 214, 255);
+    --border: rgb(0, 0, 0);
+}
+
+.TopText {
+    width: 100dvw;
+    height: 45dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.TopText img {
+    margin-top: 12dvh;
+    width: 7dvh;
+}
+.TopTextTitle {
+    font-size: 6dvh;
+    font-weight: 500;
+    margin-top: 2dvh;
+}
+.TopTextComment {
+    font-weight: 300;
+    font-size: 2dvh;
+    margin-top: 2dvh;
+}
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(5, 35dvh);
+    grid-template-rows: repeat(1, 50dvw);
+    gap: 2dvw;
+    justify-content: center;
+}
+.Choice {
+    border: 0.2dvh solid var(--border);
+    border-radius: 2vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.Choice#Special {
+    background:
+        linear-gradient(var(--background) 0 0) padding-box,
+        linear-gradient(to bottom, #00FF0A, #006CEA) border-box;
+    border: 0.4vh solid transparent;
+    border-radius: 2vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.25s ease;
+}
+.ChoiceChip {
+    width: 60%;
+    background-color: var(--chipbg);
+    border-radius: 4dvh;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5dvh;
+    font-weight: 400;
+    margin-bottom: 4dvh;
+    color: var(--chiptext);
+}
+.ChoiceChip img {
+    height: 2.5dvh;
+    margin-right: 0.5dvw;
+}
+.Skill {
+    font-size: 3.5dvh;
+    font-weight: 400;
+}
+.Tagline {
+    font-size: 2dvh;
+    font-weight: 300;
+    color: var(--font-two);
+    margin-bottom: 4dvh;
+}
+.ChoiceImage{
+    width: auto;
+    background-color: red;
+    height: 50%;
+    margin-bottom: 14dvh;
+}
+.LinktoPhones {
+    transition: 0.25s ease;
+    width: 60%;
+    height: 5%;
+    border: none;
+    background-color: var(--linktophonebg);
+    color: var(--font-one);
+    border-radius: 1dvh;
+    margin-bottom: 6dvh;
+    font-size: 2dvh;
+    font-weight: 500;
+}
+.LinktoPhones:hover {
+    background-color: var(--linktophonebghover);
+}

@@ -1,0 +1,174 @@
+:root {
+    --subtitle: rgb(178, 178, 178);
+    --accentbg: rgb(39, 39, 39);
+    --font-two: rgb(173, 173, 173);
+    --phoneboxbg: rgb(37, 38, 44);
+    --certbg: rgb(46, 54, 48);
+    --certfont: rgb(165, 231, 245);
+    --chipbg: rgb(43, 50, 46);
+}
+/* It's actually light mode and I know how counterintuitive that is but it works and I'm too lazy to change it lmao - Linas */
+[data-theme="dark"] {
+    --subtitle: rgb(75, 75, 75);
+    --accentbg: rgb(188, 207, 255);
+    --font-two: rgb(114, 114, 114);
+    --phoneboxbg: rgb(224, 233, 255);
+    --certbg: rgb(221, 255, 228);
+    --certfont: rgb(46, 131, 131);
+    --chipbg: rgb(215, 251, 231);
+}
+main {
+    transition: 0.25s ease;
+}
+.TopText {
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+    height: 50dvh;
+    top: 8.68dvh;
+    flex-direction: column;
+    align-items: center;
+}
+.Category {
+    font-size: 8dvh;
+    font-weight: 500;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    margin-top: 12dvh;
+}
+.GoodAt {
+    color: var(--subtitle);
+    font-size: 10dvh;
+    font-weight: 500;
+    text-align: center;
+    width: 80dvw;
+}
+.PhoneBoxES {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+}
+.PhoneBox {
+    background-color: var(--phoneboxbg);
+    width: 80dvw;
+    height: 40dvh;
+    margin-top: 8dvh;
+    display: flex;
+    border-radius: 2dvh;
+    transition: 0.25s ease;
+}
+.PhoneBoximg {
+    width: 12.5dvw;
+    height: 35dvh;
+    position: relative;
+    top: 2.5dvh;
+    left: 2.5dvh;
+}
+.PBText {
+    display: flex;
+    flex-direction: column;
+    width: 40dvw;
+    height: 35dvh;
+    position: relative;
+    top: 2.5dvh;
+    right: 2.5dvh;
+}
+.PBTextTitle {
+    font-size: 4dvh;
+    width: max-content;
+    height: max-content;
+    font-weight: 600;
+}
+.PBTextInbetweenGroup {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+}
+.PBTextPrice {
+    font-size: 2.5dvh;
+    color: var(--font-two);
+    width: max-content;
+    height: max-content;
+}
+.PBTextCertification {
+    background-color: var(--certbg);
+    color: var(--certfont);
+    width: 12dvw;
+    display: flex;
+    margin-left: 4dvw;
+    border-radius: 2dvh;
+    height: 4dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2dvh;
+    transition: 0.25s ease;
+}
+.PBTextCertification img {
+    height: 2dvh;
+    margin-right: 0.5dvw;
+} 
+.PBTextReview {
+    width: 100%;
+    height: 74%;
+    font-size: 2.4dvh;
+}
+.LineStyle {
+    border: 0.1dvw solid black;
+    border-radius: 50dvw;
+    position: relative;
+}
+.Links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18dvw;
+    height: 35dvh;
+    position: relative;
+    top: 2.5dvh;
+    right: 2.5dvh;
+}
+.Chips {
+    display: grid;
+    grid-template-columns: repeat(1, 16dvw);
+    grid-template-rows: repeat(3, 11dvh);
+    gap: 1dvh;
+}
+.TopChip {
+    border-radius: 2dvh 2dvh 1dvh 1dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--chipbg);
+    transition: 0.25s ease;
+}
+.TopChip img {
+    width: 90%;
+}
+.MiddleChip {
+    border-radius: 1dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--chipbg);
+    transition: 0.25s ease;
+}
+.MiddleChip img {
+    height: 150%;
+} 
+.BottomChip {
+    border-radius: 1dvh 1dvh 2dvh 2dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--chipbg);
+    transition: 0.25s ease;
+}
+.BottomChip img {
+    height: 70%;
+}

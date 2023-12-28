@@ -1,0 +1,31 @@
+:root {
+    --font-two: rgb(255, 255, 255);
+    --font-three: rgb(42, 235, 38);
+    --border: rgb(255, 255, 255);
+}
+/* It's actually light mode and I know how counterintuitive that is but it works and I'm too lazy to change it lmao - Linas */
+[data-theme="dark"] {
+    --font-two: rgb(100, 100, 100);
+    --font-three: rgb(42, 235, 38);
+    --border: rgb(0, 0, 0);
+}
+* {
+    width: 100dvw;
+}
+main {
+    width: 100%;
+    height: max-content;
+}
+.Left {
+    height: 100%;
+    width: 30%rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.LeftText {
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--font-two);
+}

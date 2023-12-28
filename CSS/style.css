@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Code+Pro&display=swap');
+/* I'll be annotating as I go so yall can read and understand it in case you don't, I hope it helps. */
+/* Setup to allow for dark mode light mode toggles */
+:root {
+    --background: rgb(40, 40, 40);
+    /* --shadow: rgb(0, 0, 0); */
+    --font-one: rgb(255, 255, 255);
+    --font-accent: rgb(255, 115, 0);
+}
+/* It's actually light mode and I know how counterintuitive that is but it works and I'm too lazy to change it lmao - Linas */
+[data-theme="dark"] {
+    --background: rgb(255, 255, 255);
+    /* --shadow: rgb(73, 73, 73); */
+    --font-one: rgb(0, 0, 0);
+    --font-accent: rgb(255, 115, 0);
+}
+body {
+    margin: 0; 
+    padding-top: 0; 
+    display: flex;
+    height: 100vh; 
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background); 
+    color: var(--font-one);
+    transition: 0.25s ease;
+    font-size: 16px;
+}
+.HeaderBar {
+    background-color: var(--background);
+    box-shadow: 0 0 3vh 0 var(--shadow);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    display: flex;
+    height: 4.34rem;
+    z-index: 100;
+    transition: 0.25s ease;
+    align-items: center;
+    justify-content: space-between;
+}
+.Navbar {
+    top: 0;
+    left: -6.59rem; /* ?Needed to postition the navbar in the actual middle */
+    right: 0;
+    position: relative;
+    display: flex;
+    height: 4.34rem;
+    align-items: center;
+    justify-content: center;
+}
+.Navbar * {
+    display: inline;
+}
+.Navbar li {
+    margin: 4rem;
+    font-size: 1.5rem;
+    position: relative;
+    height: 100%;
+}
+.Navbar li a {
+    color: var(--font-one);
+    text-decoration: none;
+}
+.TextMarker {
+    color: var(--font-accent);
+    text-decoration: underline;
+}
+/* header img {
+    margin-left: 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    background-color: rebeccapurple;
+} */
+/* .PageMark {
+    border: 0.25vh solid rgb(92, 124, 240);
+    border-radius: 1vh;
+    margin-top: 0.5vh;
+    position: absolute;
+    width: 5%;
+} */
+.Newtoggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin-top: 0;
+    z-index: 200;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 2rem;
+}
+.Newtoggle img {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0rem;
+}
+.Newtoggle img#lightModeIcon {
+    visibility: visible; /* Set default visibility for light mode icon */
+}
+.Newtoggle img#darkModeIcon {
+    visibility: hidden; /* Set default visibility for dark mode icon */
+}
+[data-theme="dark"] .Newtoggle img#lightModeIcon {
+    visibility: hidden; /* Hide light mode icon in dark mode */
+}
+[data-theme="dark"] .Newtoggle img#darkModeIcon {
+    visibility: visible; /* Show dark mode icon in dark mode */
+}
+.stars-image {
+    margin: 2vh;
+    height: 5vh;
+    width: auto;
+}
+.Logo {
+    height: 3rem;
+    width: auto;
+    margin-left: 2rem;
+}
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3dvh;
+    padding: 3dvh;
+}
+.FooterText {
+    font-size: 0.6875rem;
+    font-weight: 300;
+    text-align: center;
+} 

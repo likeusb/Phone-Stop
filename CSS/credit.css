@@ -1,0 +1,34 @@
+:root {
+    --boxbg: rgb(17, 34, 109);
+    --font-two: rgb(206, 206, 206);
+    --font-three: rgb(81, 81, 81);
+    --hr: rgb(255, 255, 255);
+}
+/* It's actually light mode and I know how counterintuitive that is but it works and I'm too lazy to change it lmao - Linas */
+[data-theme="dark"] {
+    --boxbg: rgb(45, 66, 255);
+    --font-two: rgb(89, 89, 89);
+    --font-three: rgb(145, 145, 145);
+    --hr: rgb(0, 0, 0);
+}
+.TextStuff {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TextTitle {
+    margin-top: 4rem;
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--font-two);
+    width: 90%;
+}
+.TextText {
+    margin-top: 2rem;
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 90%;
+}
