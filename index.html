@@ -3,10 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Stop</title>
-    <meta http-equiv="refresh" content="0; url=./HTML/home" />
+    <title>Phone Stop | Home</title> <!-- TODO Come up with a name -->
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Primary CSS -->
+    <link rel="stylesheet" href="../CSS/homepage.css"> <!-- CSS with exclusives for this page -->
+    <style>
+    </style>
 </head>
 <body>
-    <p><a href="http://example.com/">Redirect</a></p>
+    <div class="HideScroll">
+    <!-- Navbar setup -->
+    <header class="HeaderBar">
+        <img src="../Images/logo dark.svg" class="Logo" id="logo">
+        <div class="Navbar">
+            <nav>
+                <ul>
+                    <li><a href="./index.html"><span class="TextMarker">Home</span></a></li>
+                    <li><a href="./HTML/Phone.html">Pick Me a Phone</a></li>
+                    <li><a href="./HTML/About.html">About Us</a></li>
+                    <li><a href="./HTMLCredit.html">Extra Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Newtoggle" onclick="toggleMode()">
+            <img src="../Images/dark_mode.png" class="mode-icon" id="lightModeIcon">
+            <img src="../Images/light_mode.png" class="mode-icon" id="darkModeIcon">
+        </div>
+    </header>
+    <main>
+        <div class="Everything">
+            <div class="ProperHomepage">
+                <div class="ElementsLeft">
+                    <div class="BrandingText">
+                        Best phones for
+                        <span class="BrandingMainPoint">you.</span>
+                        Handpicked.
+                    </div>
+                    <div class="ElementsBottom">
+                    <button class="LinkingBox" onclick="window.location.href='./phone.html';" style="cursor: pointer;">Give us a try!</button>
+                    </div>
+                </div>
+                <div class="BrandingImage">
+                    <img src="../Images/phone user not oversized .png">
+                </div>
+            </div>
+            <!-- <div class="FAQ">FAQ</div>
+            <div class="Topic">
+                <div class="WhyUsQuest">Why Us?</div>
+                <hr class="line">
+                <div class="WhyUsAnswer">nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae</div>
+            </div>
+            <div class="Topic" style="margin-top: 16dvh;">
+                <div class="SecurityAnswer">nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae</div>
+                <hr class="line">
+                <div class="SecurityQuest">Security</div>
+            </div>
+            <div class="Topic" style="margin-top: 16dvh; height: 50dvh;">
+                <div class="Infographic">
+                    <img src="../Images/infographic.png">
+                </div>
+                <div class="Invite">
+                    <div class="InviteTitle">
+                        <img src="../Images/invite dark.png" id="icon" data-light="../Images/invite dark.png" data-dark="../Images/invite light.png">
+                        Want to get involved?</div>
+                    <div class="InviteText">Get in touch with us through our twitter and telegram!</div>
+                    <div class="InviteImages">
+                        <a href="https://t.me/+8tAqm21gxL9iMDZk"><img src="../Images/telegram dark.png" id="icon" data-light="../Images/telegram light.png" data-dark="../Images/telegram dark.png"></a>
+                        <a href="https://twitter.com/likeusb"><img src="../Images/twitter dark.png" id="icon" data-light="../Images/twitter dark.png" data-dark="../Images/twitter light.svg"></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="footer">
+            <div class="FooterText">
+                We are not affiliated with Amazon, Flipkart, Best Buy, etc. All of our recommendations are the curated regardless of any kind of sponsor.<br>
+                This project is purely a hobby and we dont not make any money out of it. All rights are reserved to their respective owners.
+            </div>
+        </div>
+    </main>
+    </div>
 </body>
+<script src="../script.js" type="text/javascript"></script>
 </html>
